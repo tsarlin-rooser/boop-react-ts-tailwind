@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story, storiesOf } from '@storybook/react';
 import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
-import { Button, ButtonProps } from '../src';
+import { Button, ButtonProps } from '..';
 
 const meta: Meta = {
   title: 'Button',
