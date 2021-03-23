@@ -18,3 +18,5 @@ export const Thing: FC<Props> = ({ children }) => {
     </div>
   );
 };
+
+export * from './Button/Button';
