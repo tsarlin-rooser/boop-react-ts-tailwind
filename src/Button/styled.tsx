@@ -10,8 +10,10 @@ export interface StyledButtonProps {
 
 export const StyledButton = styled.button.attrs(
   ({ size, variant }: StyledButtonProps) => {
+    const primary = 'text-white bg-blue3';
+    const secondary = 'text-blue3 bg-transparent border-1 border-blue3';
     return {
-      className: `px-8 py-2 font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-red-300 to-blue-300 hover:from-pink-400 hover:to-indigo-400`,
+      className: `px-s py-xs rounded ${variant === 'primary' ? primary : secondary}`,
     };
   }
 )<StyledButtonProps>``;

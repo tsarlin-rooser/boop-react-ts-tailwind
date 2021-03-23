@@ -2,6 +2,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    borderRadius: {
+      
+    },
     colors: {
       blue1:      '#21354B',
       blue2:      '#2A5989',
@@ -35,16 +38,14 @@ module.exports = {
       grey5:      '#F2F4F5',
       white:      '#F3F5FB',
     },
-    extend: {
-      spacing: {
-        xxs:  '4px',
-        xs:   '8px',
-        s:    '16px',
-        m:    '24px',
-        l:    '32px',
-        xl:   '48px',
-        xxl:  '64px',
-      }
+    spacing: {
+      xxs:  '4px',
+      xs:   '8px',
+      s:    '16px',
+      m:    '24px',
+      l:    '32px',
+      xl:   '48px',
+      xxl:  '64px',
     },
   },
   variants: {
