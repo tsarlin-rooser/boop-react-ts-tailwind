@@ -8,12 +8,17 @@ export interface StyledButtonProps {
   variant?: ButtonVariants;
 }
 
+const variantClasses = {
+  primary: 'text-white bg-blue-3',
+  secondary: 'text-blue-3 bg-transparent border border-1 border-blue-3',
+  tertiary: '',
+  destructive: '',
+};
+
 export const StyledButton = styled.button.attrs(
-  ({ variant }: StyledButtonProps) => {
-    const primary = 'text-white bg-blue3';
-    const secondary = 'text-blue3 bg-transparent border-1 border-blue3';
+  ({ variant = 'primary' }: StyledButtonProps) => {
     return {
-      className: `px-s py-xs rounded ${variant === 'primary' ? primary : secondary}`,
+      className: `px-s py-xs rounded ${variantClasses[variant]}`,
     };
   }
 )<StyledButtonProps>``;

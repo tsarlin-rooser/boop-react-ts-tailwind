@@ -23,4 +23,4 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const SCButton = Template.bind({});
 
-SCButton.args = { text: 'Button' };
+SCButton.args = { text: 'Label' };
