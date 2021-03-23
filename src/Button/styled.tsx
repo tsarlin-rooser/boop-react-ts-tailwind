@@ -9,7 +9,7 @@ export interface StyledButtonProps {
 }
 
 export const StyledButton = styled.button.attrs(
-  ({ size, variant }: StyledButtonProps) => {
+  ({ variant }: StyledButtonProps) => {
     const primary = 'text-white bg-blue3';
     const secondary = 'text-blue3 bg-transparent border-1 border-blue3';
     return {
