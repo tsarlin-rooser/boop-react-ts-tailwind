@@ -86,5 +86,8 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.1.0",
     "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "twin.macro": "^2.3.1"
   }
 }
