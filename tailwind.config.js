@@ -1,6 +1,4 @@
-module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+const styledComponentTheme = {
   theme: {
     colors: {
       blue1:      '#21354B',
@@ -45,6 +43,16 @@ module.exports = {
       xxl:  '64px',
     },
   },
+};
+
+const classnamesTheme = {};
+
+const twinMacroTheme = {};
+
+module.exports = {
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
+  theme: classnamesTheme, // or styledComponentTheme or twinMacroTheme
   variants: {
     extend: {},
   },
