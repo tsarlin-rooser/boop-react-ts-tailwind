@@ -52,7 +52,7 @@ const twinMacroTheme = {};
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
-  theme: classnamesTheme, // or styledComponentTheme or twinMacroTheme
+  theme: styledComponentTheme, // or styledComponentTheme or twinMacroTheme
   variants: {
     extend: {},
   },

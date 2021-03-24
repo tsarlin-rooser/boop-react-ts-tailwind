@@ -18,3 +18,5 @@ export const Button: FC<ButtonProps> = ({
     </StyledButton>
   );
 };
+
+Button.displayName = 'ButtonSC';

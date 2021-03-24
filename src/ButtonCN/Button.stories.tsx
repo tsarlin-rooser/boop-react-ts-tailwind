@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from './Button';
+import { ButtonCN } from '..';
 
 const meta: Meta = {
   title: 'Classnames Button',
-  component: Button,
+  component: ButtonCN.Button,
   argTypes: {
     text: {
       control: {
@@ -19,7 +19,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonCN.ButtonProps> = (args) => <ButtonCN.Button {...args} />;
 
 export const TestButton = Template.bind({});
 TestButton.args = { text: 'Button' };
