@@ -19,4 +19,5 @@ export const Thing: FC<Props> = ({ children }) => {
   );
 };
 
-export * from './Button/Button';
+export * as CNButton from './ButtonClassnames/Button';
+export * as SCButton from './ButtonStyledComponents/Button';

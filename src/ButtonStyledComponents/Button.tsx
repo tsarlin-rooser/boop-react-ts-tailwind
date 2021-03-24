@@ -8,9 +8,9 @@ export interface ButtonProps extends StyledButtonProps {
 
 export const Button: FC<ButtonProps> = ({
   onClick,
-  size,
+  size = 'regular',
   text,
-  variant,
+  variant = 'primary',
 }) => {
   return (
     <StyledButton onClick={onClick} size={size} variant={variant}>
@@ -18,8 +18,3 @@ export const Button: FC<ButtonProps> = ({
     </StyledButton>
   );
 };
-
-Button.defaultProps = {
-  size: 'regular',
-  variant: 'primary',
-}
