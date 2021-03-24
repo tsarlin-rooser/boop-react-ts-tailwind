@@ -1,13 +1,13 @@
 import tw, { styled } from 'twin.macro';
-const base = 'rounded';
 
-const regular = tw`px-s py-xs`;
-const large = tw`px-m py-s`;
+const base = tw`rounded text-sm`;
+const regular = tw`px-2 py-1.5`;
+const large = tw`px-3 py-2.5`;
+const primary = tw`text-white bg-blue-500`;
+const secondary = tw`text-blue-500 bg-white border border-2 border-blue-500`;
+const tertiary = tw`text-blue-500 bg-white border-none`;
+const destructive = tw`text-red-500 bg-white border-none`;
 
-const primary = tw`text-white bg-blue-3`;
-const secondary = ``;
-const tertiary = ``;
-const destructive = ``;
 
 const StyledButton = styled.button(({ size, variant }) => [
   base,
