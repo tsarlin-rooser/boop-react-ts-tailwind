@@ -13,10 +13,10 @@ export const StyledButton = styled.button.attrs(
     const base = 'rounded';
   
     const getVariantClassname = () => {
-      const primaryClasses = 'text-white bg-blue3';
-      const secondaryClasses = 'text-blue3 bg-transparent border border-2 border-blue3';
-      const tertiaryClasses = 'text-blue3 bg-transparent border-none';
-      const destructiveClasses = 'text-red3 bg-transparent border-none';
+      const primaryClasses = 'text-white bg-blue-3';
+      const secondaryClasses = 'text-blue-3 bg-transparent border border-2 border-blue-3';
+      const tertiaryClasses = 'text-blue-3 bg-transparent border-none';
+      const destructiveClasses = 'text-red-3 bg-transparent border-none';
 
       switch(variant) {
         case ('primary'): return primaryClasses;
