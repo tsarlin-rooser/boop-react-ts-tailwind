@@ -19,4 +19,4 @@ export const Thing: FC<Props> = ({ children }) => {
   );
 };
 
-export * from './Button/Button';
+export * from './ButtonSC/Button';
