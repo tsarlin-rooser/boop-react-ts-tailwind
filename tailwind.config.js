@@ -62,6 +62,10 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      display: ['Helvetica Neueu', 'sans-serif'],
+      body: ['Helvetica Neueu', 'sans-serif'],
+    },
     extend: extension
   },
   variants: {

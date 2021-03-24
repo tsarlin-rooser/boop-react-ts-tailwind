@@ -1,19 +1,18 @@
 import styled from 'styled-components';
-
-type ButtonSizes = 'regular' | 'large';
-type ButtonVariants = 'primary' | 'secondary' | 'tertiary' | 'destructive';
+import { ButtonSizes, ButtonVariants } from './Button';
 
 export interface StyledButtonProps {
+  disabled?: boolean;
   size?: ButtonSizes;
   variant?: ButtonVariants;
 }
 
 export const StyledButton = styled.button.attrs(
-  ({ size, variant }: StyledButtonProps) => {
+  ({ disabled, size, variant }: StyledButtonProps) => {
     const base = 'rounded text-sm';
   
     const getVariantClassname = () => {
-      const primaryClasses = 'text-white bg-blue-3';
+      const primaryClasses = `text-white bg-blue-3 hover:bg-blue-2 focus:bg-blue-1 focus:outline-none ${disabled && 'disabled:bg-grey-4'}`;
       const secondaryClasses = 'text-blue-3 bg-transparent border border-2 border-blue-3';
       const tertiaryClasses = 'text-blue-3 bg-transparent border-none';
       const destructiveClasses = 'text-red-3 bg-transparent border-none';
