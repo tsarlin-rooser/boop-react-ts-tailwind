@@ -3,26 +3,19 @@ import { Meta, Story } from '@storybook/react';
 import { ButtonCN } from '..';
 
 const meta: Meta = {
-  title: 'Classnames Button',
+  title: 'Buttons/Classnames',
   component: ButtonCN.Button,
   argTypes: {
-    text: {
-      control: {
-        type: 'text',
-      },
-    },
+    variant: { control: 'text' },
   },
   parameters: {
-    controls: { expanded: true },
-  },
+    docs: { page: null },
+  }
 };
 
 export default meta;
 
 const Template: Story<ButtonCN.ButtonProps> = (args) => <ButtonCN.Button {...args} />;
-
-export const TestButton = Template.bind({});
-TestButton.args = { text: 'Button' };
 
 export const RegularPrimary = Template.bind({});
 RegularPrimary.args = { text: 'primary', variant: 'primary' };

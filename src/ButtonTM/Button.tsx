@@ -1,7 +1,6 @@
-import React, { FC } from 'react';
 import 'twin.macro';
+import React, { FC } from 'react';
 import StyledButton from './twin';
-
 
 type ButtonSizes = 'regular' | 'large';
 type ButtonVariants = 'primary' | 'secondary' | 'tertiary' | 'destructive';

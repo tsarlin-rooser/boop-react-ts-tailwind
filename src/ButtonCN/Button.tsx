@@ -26,3 +26,8 @@ export const Button: FC<ButtonProps> = ({
 };
 
 Button.displayName = 'ButtonCN';
+
+Button.defaultProps = {
+  size: 'regular',
+  variant: 'primary',
+};

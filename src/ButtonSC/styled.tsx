@@ -10,7 +10,7 @@ export interface StyledButtonProps {
 
 export const StyledButton = styled.button.attrs(
   ({ size, variant }: StyledButtonProps) => {
-    const base = 'rounded';
+    const base = 'rounded text-sm';
   
     const getVariantClassname = () => {
       const primaryClasses = 'text-white bg-blue-3';

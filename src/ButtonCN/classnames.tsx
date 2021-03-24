@@ -1,6 +1,6 @@
 import { classnames } from 'tailwindcss-classnames';
 
-const base = classnames('rounded');
+const base = classnames('rounded', 'text-sm');
 const regular = classnames('px-2', 'py-1.5');
 const large = classnames('px-3', 'py-2.5');
 const primary = classnames('text-white', 'bg-blue-500');

@@ -1,17 +1,16 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { ButtonSC } from '..';
+import { ButtonTM } from '..';
 
 const meta: Meta = {
-  title: 'Buttons/Styled Component',
-  component: ButtonSC.Button,
+  title: 'Buttons/TwinMacro',
+  component: ButtonTM.Button,
   argTypes: {
     text: {
       control: {
         type: 'text',
       },
     },
-    size: { control: { type: '' } }
   },
   parameters: {
     controls: { expanded: true },
@@ -20,7 +19,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ButtonSC.ButtonProps> = (args) => <ButtonSC.Button {...args} />;
+const Template: Story<ButtonTM.ButtonProps> = (args) => <ButtonTM.Button {...args} />;
 
 export const TestButton = Template.bind({});
 TestButton.args = { text: 'Button' };
