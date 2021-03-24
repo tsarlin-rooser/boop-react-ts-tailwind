@@ -21,6 +21,9 @@ export default meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
+export const TestButton = Template.bind({});
+TestButton.args = { text: 'Button' };
+
 export const RegularPrimary = Template.bind({});
 RegularPrimary.args = { text: 'primary', variant: 'primary' };
 
